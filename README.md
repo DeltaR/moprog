@@ -2,7 +2,7 @@
 
 Repositório dos problemas resolvidos de MOPROG
 
-### Estrutua ###
+### Estrutura ###
 
 * exerc<Nome> - PL<Número_PL>:EX<Número_Exercicio>
 
