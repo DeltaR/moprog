@@ -36,12 +36,9 @@ class Person{
         this.age = age;
     }
 
-    public String toStringName(){
-        return "O meu nome é " + name;
-    }
-
-    public String toStringAge(){
-        return name + " tem " + age + " anos";
+    public String toString(){
+        if(age>0) return "O meu nome é " + name + " e tenho " + age + " anos";
+        else return "O meu nome é " + name;
     }
 }
 
@@ -62,12 +59,12 @@ public class Cumprimentar {
         System.out.println("Idade da Terceira Pessoa?");
         int age3 = s.nextInt();
         Person actor3 = new Person(name3, age3);
-        System.out.println(actor.toStringName());
+        System.out.println(actor);
         System.out.println("Olá " + actor.getName() + "! O meu é " + actor2.getName());
-        System.out.println("Olá a todos! " + actor3.toStringName());
-        System.out.println(actor3.toStringAge());
+        System.out.println("Olá a todos! " + actor3);
         actor3.setAge(age3+1);
-        System.out.println("Mas como hoje faz anos, agora tem " + actor3.getAge());
+        System.out.println("Mas como hoje faço anos, agora tenho " + actor3.getAge());
+
     }
 
     /*
@@ -81,13 +78,12 @@ public class Cumprimentar {
         String name3 = JOptionPane.showInputDialog("Nome da Terceira Pessoa?");
         int age3 = Integer.parseInt(JOptionPane.showInputDialog("Idade da Terceira Pessoa?"));
         Person actor3 = new Person(name3, age3);
-        JOptionPane.showMessageDialog(null, actor.toStringName());
+        JOptionPane.showMessageDialog(null, actor);
         JOptionPane.showMessageDialog(null, "Olá " + actor.getName() + "! O meu é " + actor2.getName());
-        JOptionPane.showMessageDialog(null, "Olá a todos! " + actor3.toStringName());
-        JOptionPane.showMessageDialog(null, actor3.toStringAge());
+        JOptionPane.showMessageDialog(null, "Olá a todos! " + actor3);
         actor3.setAge(age3+1);
-        JOptionPane.showMessageDialog(null, "Mas como hoje faz anos, agora tem " + actor3.getAge());
+        JOptionPane.showMessageDialog(null, "Mas como hoje faço anos, agora tenho " + actor3.getAge());
     }
-    */
 
+*/
 }

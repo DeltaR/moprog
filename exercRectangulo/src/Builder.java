@@ -1,20 +1,20 @@
 import javax.swing.JOptionPane;
-import java.util.Scanner;
+import java.util.*;
 
 class Rectangle{
-    private int width;
-    private int height;
+    private float width;
+    private float height;
 
-    Rectangle(int width, int height){
+    Rectangle(float width, float height){
         this.width = width;
         this.height = height;
     }
 
-    public int getArea(){
+    public float getArea(){
         return width*height;
     }
 
-    public int getPerimeter(){
+    public float getPerimeter(){
         return 2*width + 2*height;
     }
 
@@ -23,23 +23,25 @@ class Rectangle{
 public class Builder {
 
     public static void main(String[] args) {
+        Formatter f = new Formatter(); //Usado para formatar o output da Area
         Scanner s = new Scanner(System.in);
         System.out.println("Neste programa estamos a assumir as medidas em centimetros e os valores são inteiros");
         System.out.println("Introduza a largura do rectângulo:");
-        int width = s.nextInt();
+        float width = s.nextFloat();
         System.out.println("Introduza a comprimento do rectângulo:");
-        int height = s.nextInt();
+        float height = s.nextFloat();
         Rectangle object = new Rectangle(width, height);
-        System.out.println("O retângulo tem " + object.getArea() + "cm^2 de área e " + object.getPerimeter() + "cm de perimetro.");
+        System.out.println("O retângulo tem " + f.format("%4.2f", object.getArea()) + "cm^2 de área e " + object.getPerimeter() + "cm de perimetro.");
 
     }
     /*
     public static void main(String[] args) {
+        Formatter f = new Formatter(); //Usado para formatar o output da Area
         JOptionPane.showMessageDialog(null, "Neste programa estamos a assumir as medidas em centimetros e os valores são inteiros");
-        int width = Integer.parseInt(JOptionPane.showInputDialog("Introduza a largura do rectângulo:"));
-        int height = Integer.parseInt(JOptionPane.showInputDialog("Introduza a comprimento do rectângulo:"));
+        float width = Float.parseFloat(JOptionPane.showInputDialog("Introduza a largura do rectângulo:"));
+        float height = Float.parseFloat(JOptionPane.showInputDialog("Introduza a comprimento do rectângulo:"));
         Rectangle object = new Rectangle(width, height);
-        JOptionPane.showMessageDialog(null, "O retângulo tem " + object.getArea() + "cm^2 de área e " + object.getPerimeter() + "cm de perimetro.");
+        JOptionPane.showMessageDialog(null, "O retângulo tem " + f.format("%4.2f", object.getArea()) + "cm^2 de área e " + object.getPerimeter() + "cm de perimetro.");
 
     }
      */
