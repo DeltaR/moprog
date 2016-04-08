@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 class Person{
     private String name;
@@ -44,7 +45,32 @@ class Person{
     }
 }
 
+
 public class Cumprimentar {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Nome da primeira pessoa?");
+        String name = s.nextLine();
+        Person actor = new Person(name);
+        System.out.println("Nome da segunda pessoa?");
+        String name2 = s.nextLine();
+        Person actor2 = new Person();
+        actor2.setName(name2);
+        System.out.println("Nome da terceira Pessoa?");
+        String name3 = s.nextLine();
+        System.out.println("Idade da Terceira Pessoa?");
+        int age3 = s.nextInt();
+        Person actor3 = new Person(name3, age3);
+        System.out.println(actor.toStringName());
+        System.out.println("Olá " + actor.getName() + "! O meu é " + actor2.getName());
+        System.out.println("Olá a todos! " + actor3.toStringName());
+        System.out.println(actor3.toStringAge());
+        actor3.setAge(age3+1);
+        System.out.println("Mas como hoje faz anos, agora tem " + actor3.getAge());
+    }
+
+    /*
 
     public static void main(String[] args) {
         String name = JOptionPane.showInputDialog("Nome da primeira pessoa?");
@@ -62,5 +88,6 @@ public class Cumprimentar {
         actor3.setAge(age3+1);
         JOptionPane.showMessageDialog(null, "Mas como hoje faz anos, agora tem " + actor3.getAge());
     }
+    */
 
 }
