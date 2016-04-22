@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="654.0" y="168.0">TrabalhadorComissao</node>
+    <node x="303.00000000000006" y="168.0">TrabalhadorPeca</node>
+    <node x="599.325" y="486.0">TesteVencimentos</node>
+    <node x="706.8107142857143" y="0.0">Trabalhador</node>
+    <node x="0.0" y="190.0">TrabalhadorHora</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="TrabalhadorComissao" target="Trabalhador">
+      <point x="0.0" y="-114.0" />
+      <point x="803.0" y="148.0" />
+      <point x="795.8107142857143" y="148.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="TrabalhadorHora" target="Trabalhador">
+      <point x="0.0" y="-92.0" />
+      <point x="131.5" y="138.0" />
+      <point x="724.6107142857143" y="138.0" />
+      <point x="-71.20000000000005" y="59.0" />
+    </edge>
+    <edge source="TrabalhadorPeca" target="Trabalhador">
+      <point x="0.0" y="-114.0" />
+      <point x="468.50000000000006" y="148.0" />
+      <point x="760.2107142857144" y="148.0" />
+      <point x="-35.60000000000002" y="59.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="476.0" y="257.5" />
+  <SelectedNodes>
+    <node>Trabalhador</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
