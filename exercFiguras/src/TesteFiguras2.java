@@ -43,5 +43,19 @@ public class TesteFiguras2 {
                 System.out.printf("%s área=%.1f%n", figuras[i], (figuras[i].calcularArea()));
             }
         }
+
+        System.out.println("\n### Listagem das instâncias do Rectangulo ###");
+        for(int i = 0; i < figuras.length; i++){
+            if(figuras[i] instanceof Retangulo){
+                System.out.println(figuras[i]);
+            }
+        }
+
+        System.out.println("\n### Listagem das instâncias do Circulos ###");
+        for(int i = 0; i < figuras.length; i++){
+            if(figuras[i] instanceof Circulo){
+                System.out.println(figuras[i]);
+            }
+        }
     }
 }
