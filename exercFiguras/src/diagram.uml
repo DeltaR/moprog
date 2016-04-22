@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="301.0">Circulo</node>
+    <node x="313.0" y="257.0">Retangulo</node>
+    <node x="214.25" y="0.0">Figura</node>
+    <node x="0.0" y="641.0">TesteFiguras2</node>
+    <node x="198.0" y="641.0">TesteFiguras</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Circulo" target="Figura">
+      <point x="0.0" y="-125.5" />
+      <point x="146.5" y="232.0" />
+      <point x="275.25" y="232.0" />
+      <point x="-61.0" y="103.5" />
+    </edge>
+    <edge source="Retangulo" target="Figura">
+      <point x="0.0" y="-169.5" />
+      <point x="526.0" y="232.0" />
+      <point x="397.25" y="232.0" />
+      <point x="61.0" y="103.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="369.5" y="346.0" />
+  <SelectedNodes>
+    <node>TesteFiguras</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
