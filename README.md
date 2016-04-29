@@ -15,3 +15,4 @@ Repositório dos problemas resolvidos de MOPROG
 * exercRectangulo - PL3:EX2
 * exercFigura - PL4:EX1
 * exercVencimentos - PL4:EX2
+* exercEquipInf - PL5:EX1
